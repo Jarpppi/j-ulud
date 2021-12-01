@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: aliceblue;
+    background: black;
+}
+
+.container {
+    background-image: url('../images/pexels-photo-3224164.jpg');
+    position: relative;
+}
+
+.inner-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 15rem;
+}
+
+.inner-container h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+}
+
+.countdown {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.countdown div {
+    padding: 0.6rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0.3rem;
+    background-color: yellow;
+}
+
+@media (max-width: 568px) {
+    .inner-container h1 {
+        font-size: 3rem;
+    }
+
+    .countdown {
+        flex-direction: column;
+    }
+}
